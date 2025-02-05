@@ -1,0 +1,29 @@
+@font-face {
+    font-family: 'Font';
+    src: url(./font/FuturaNowHeadline.ttf);
+}
+
+* {
+    font-family: 'Font';
+    font-size: 1em;
+    font-weight: 200;
+    text-decoration: none;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    box-sizing: 0;
+    list-style: none;
+
+
+}
+
+body{
+    & .conteiner{
+        & .img{
+            & img{
+                max-width: 300px;
+                
+            }
+        }
+    }
+}
