@@ -17,13 +17,79 @@
 
 }
 
-body{
-    & .conteiner{
-        & .img{
-            & img{
-                max-width: 300px;
-                
-            }
+body {
+    header {
+        width: 100vw;
+        border-bottom: 1px solid black;
+        & h1 {
+            color: black;
+            font-size: 3em;
+            font-weight: bold;
+            margin-left: 45%;
+            margin-top: 1%;
+            padding-bottom: 1%;
         }
     }
+
+    & .conteiner {
+        padding: 300px;
+        width: 100vw;
+        height: 55%;
+        background-color: rgba(0, 0, 0, 0.212);
+        margin-top: 5%;
+
+        & .grupo {
+            margin-left: 10%;
+            & .img {
+
+                display: flex;
+                /* Habilita o flexbox */
+                gap: 20px;
+
+                & img {
+                    position: absolute;
+                    object-fit: cover;
+                    width: 250px;
+                    height: 500px;
+                    border-radius: 40px;
+                    margin-top: -13%;
+                }
+            }
+
+            & .img.a {
+                margin-left: -10%;
+            }
+
+            & .img.b {
+                margin-left: 10%;
+            }
+
+            & .img.c {
+                margin-left: 30%;
+            }
+
+            & .img.d {
+                margin-left: 50%;
+            }
+
+        }
+
+
+
+
+    }
+}
+
+@keyframes loading {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
+
+body {
+    animation: loading 2s ease-in-out;
 }
