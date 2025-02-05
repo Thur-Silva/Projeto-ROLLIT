@@ -6,28 +6,53 @@
 * {
     font-family: 'Font';
     font-size: 1em;
-    font-weight: 200;
+    font-weight: 100;
     text-decoration: none;
     list-style-type: none;
     margin: 0;
     padding: 0;
     box-sizing: 0;
     list-style: none;
-
+    color: black;
 
 }
 
 body {
     header {
         width: 100vw;
-        border-bottom: 1px solid black;
+        border-bottom: 1px solid rgba(95, 95, 95, 0.103);
+        background-color: rgba(0, 0, 0, 0.082);
+        padding-top: 1%;
         & h1 {
             color: black;
             font-size: 3em;
             font-weight: bold;
             margin-left: 45%;
-            margin-top: 1%;
             padding-bottom: 1%;
+        }
+          
+        & .icone{
+            width: 50px;
+            height: 50px;
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            margin-top: -3.8%;
+        }
+
+        & .icone:hover{
+            width: 52px;
+            height: 52px;
+        }
+
+        & a{
+            margin: 0;
+            padding: 0;
+            position: absolute;
+            
+            margin-left: 93%;
+            margin-top: -2.8%;
+            
         }
     }
 
@@ -35,8 +60,9 @@ body {
         padding: 300px;
         width: 100vw;
         height: 55%;
-        background-color: rgba(0, 0, 0, 0.212);
-        margin-top: 5%;
+        background-color: rgba(0, 0, 0, 0.253);
+        margin-top: 2%;
+        border: 1px solid rgba(95, 95, 95, 0.103);
 
         & .grupo {
             margin-left: 10%;
@@ -79,6 +105,40 @@ body {
 
     }
 }
+
+/* header icones*/
+    #menu{
+        margin-left: 2%;
+    }
+
+    #user{
+        margin-left: 80%;
+        width: 60px;
+        height: 60px;
+    }
+
+    #alerta{
+        margin-left: 90%;
+    }
+    & #user:hover{
+        width: 62px;
+        height: 62px;
+    }
+/* fim header icones*/
+
+/*setas de scroll*/
+#esquerda{
+    position: absolute;
+    margin-left: -10%;
+}
+
+#direita{
+    position: absolute;
+    margin-left: 77%;
+    transform: rotate(180deg);
+}
+
+/*fim das setas de scroll*/
 
 @keyframes loading {
     0% {
