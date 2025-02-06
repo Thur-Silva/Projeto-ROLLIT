@@ -23,6 +23,7 @@ body {
         border-bottom: 1px solid rgba(95, 95, 95, 0.103);
         background-color: rgba(0, 0, 0, 0.082);
         padding-top: 1%;
+
         & h1 {
             color: black;
             font-size: 3em;
@@ -30,8 +31,8 @@ body {
             margin-left: 45%;
             padding-bottom: 1%;
         }
-          
-        & .icone{
+
+        & .icone {
             width: 50px;
             height: 50px;
             margin: 0;
@@ -40,12 +41,12 @@ body {
             margin-top: -3.8%;
         }
 
-        & .icone:hover{
+        & .icone:hover {
             width: 52px;
             height: 52px;
         }
 
-        & a{
+        & a {
             margin: 0;
             padding: 0;
             position: absolute;
@@ -53,22 +54,40 @@ body {
             margin-top: -2.8%;
         }
 
-        & a:hover{
+        & a:hover {
             border-bottom: 1px solid rgba(95, 95, 95, 0.103);
         }
 
-        & .login{
+        & .login {
             margin-left: 83.5%;
         }
-        
-    }
 
-    & .menuBar{
-        padding: 20px;
-        background-color: black;
+    }
+/* MENU BAR
+    & .menuBar {
+        padding: 22% 15%;
+        background-color: rgba(0, 0, 0, 0.438);
         position: absolute;
         z-index: 100;
+        display: grid;
+
+        & .itens {
+            grid-column: inherit;
+            position: absolute;
+            margin-top: -28%;
+        }
+
+        & a {
+            margin-bottom: 10%;
+            color: aliceblue;
+            font-size: 1.6em;
+            margin-left: -40%;
+
+         
+        }
     }
+*/
+
 
     & .conteiner {
         padding: 300px;
@@ -78,30 +97,30 @@ body {
         margin-top: 2%;
         border: 1px solid rgba(95, 95, 95, 0.103);
 
-        & .icone:hover{
+        & .icone:hover {
             width: 52px;
             height: 52px;
         }
 
         & .grupo {
             margin-left: 10%;
-            
-            & .img.active{
-                & img{
-                  width: 260px;
-                      height: 510px;
-                      transition: 0.3s;
+
+            & .img.active {
+                & img {
+                    width: 260px;
+                    height: 510px;
+                    transition: 0.3s;
                 }
 
-                & a{
+                & a {
                     font-size: 1.25em;
                     transition: 0.3s;
                     color: rgb(177, 112, 33);
                 }
-              }
+            }
 
             & .img {
-                & a{
+                & a {
                     z-index: 10;
                     position: absolute;
                     margin-top: 14%;
@@ -113,7 +132,8 @@ body {
                     border-radius: 15%;
                     color: rgb(104, 85, 61);
                 }
-                & a:hover{
+
+                & a:hover {
                     font-size: 1.25em;
                     transition: 0.3s;
                     color: rgb(177, 112, 33);
@@ -131,13 +151,14 @@ body {
                     border-radius: 40px;
                     margin-top: -13%;
                 }
-                & img:hover{
+
+                & img:hover {
                     width: 265px;
                     height: 515px;
                     transition: 0.3s;
                 }
 
-            
+
             }
 
 
@@ -166,32 +187,34 @@ body {
 }
 
 /* header icones*/
-    #menu{
-        margin-left: 2%;
-    }
+#menu {
+    margin-left: 2%;
+}
 
-    #user{
-        margin-left: 80%;
-        width: 60px;
-        height: 60px;
-    }
+#user {
+    margin-left: 80%;
+    width: 60px;
+    height: 60px;
+}
 
-    #alerta{
-        margin-left: 90%;
-    }
-    & #user:hover{
-        width: 62px;
-        height: 62px;
-    }
+#alerta {
+    margin-left: 90%;
+}
+
+& #user:hover {
+    width: 62px;
+    height: 62px;
+}
+
 /* fim header icones*/
 
 /*setas de scroll*/
-#esquerda{
+#esquerda {
     position: absolute;
     margin-left: -10%;
 }
 
-#direita{
+#direita {
     position: absolute;
     margin-left: 77%;
     transform: rotate(180deg);
