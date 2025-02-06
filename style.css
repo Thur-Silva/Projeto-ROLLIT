@@ -49,10 +49,16 @@ body {
             margin: 0;
             padding: 0;
             position: absolute;
-            
             margin-left: 93%;
             margin-top: -2.8%;
-            
+        }
+
+        & a:hover{
+            border-bottom: 1px solid rgba(95, 95, 95, 0.103);
+        }
+
+        & .login{
+            margin-left: 83.5%;
         }
     }
 
@@ -60,13 +66,30 @@ body {
         padding: 300px;
         width: 100vw;
         height: 55%;
-        background-color: rgba(0, 0, 0, 0.253);
+        background-color: rgba(0, 0, 0, 0.158);
         margin-top: 2%;
         border: 1px solid rgba(95, 95, 95, 0.103);
 
         & .grupo {
             margin-left: 10%;
             & .img {
+                & a{
+                    z-index: 10;
+                    position: absolute;
+                    margin-top: 14%;
+                    margin-left: 3.3%;
+                    font-size: 1.2em;
+                    padding-left: 7px;
+                    padding-right: 7px;
+                    border-bottom: 1px solid beige;
+                    border-radius: 15%;
+                    color: rgb(104, 85, 61);
+                }
+                & a:hover{
+                    font-size: 1.25em;
+                    transition: 0.3s;
+                    color: rgb(177, 112, 33);
+                }
 
                 display: flex;
                 /* Habilita o flexbox */
@@ -79,6 +102,11 @@ body {
                     height: 500px;
                     border-radius: 40px;
                     margin-top: -13%;
+                }
+                & img:hover{
+                    width: 256px;
+                    height: 506px;
+                    transition: 0.3s;
                 }
             }
 
