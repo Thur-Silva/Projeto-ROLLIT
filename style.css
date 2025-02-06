@@ -60,6 +60,14 @@ body {
         & .login{
             margin-left: 83.5%;
         }
+        
+    }
+
+    & .menuBar{
+        padding: 20px;
+        background-color: black;
+        position: absolute;
+        z-index: 100;
     }
 
     & .conteiner {
@@ -74,7 +82,7 @@ body {
             width: 52px;
             height: 52px;
         }
-        
+
         & .grupo {
             margin-left: 10%;
             
